@@ -47,6 +47,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
+    border-radius: 10px 0px 40px 15px;
     background-color: #000000;
     margin-left: 10px;
     width: 250px;
@@ -57,23 +58,25 @@ a {
     align-items: center;
     overflow: visible;
     transition: all 0.7s;
-    -webkit-clip-path: circle(30px at 200px 35px);
-            clip-path: circle(30px at 200px 35px);
+    -webkit-clip-path: circle(30px at 200px 32px);
+            clip-path: circle(30px at 200px 32px);
   }
   .nav-section #nav-section-bar-menu {
     opacity: 1;
+    cursor: pointer;
   }
 
   .nav-section:hover {
     -webkit-clip-path: circle(75%);
             clip-path: circle(75%);
+    transition: all 0.5s;
   }
   .nav-section:hover #nav-section-bar-menu {
     opacity: 0;
   }
 
   .nav-section-bar {
-    margin-bottom: 10px;
+    margin-bottom: -20px;
   }
 
   .nav-section-bar-header {
@@ -98,12 +101,13 @@ a {
     align-items: center;
     list-style: none;
     background-color: #0015f8;
-    height: 30px;
+    width: 80%;
     margin: 7px;
     border-radius: 8px;
   }
 
   .nav-section li:hover {
+    transition: all 0.4s ease;
     background-color: #169c64;
   }
 
@@ -111,7 +115,7 @@ a {
     text-decoration: none;
     color: #000000;
     margin: 10px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 550;
     text-align: center;
   }
