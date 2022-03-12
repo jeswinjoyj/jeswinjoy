@@ -1,90 +1,132 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 body {
-    background: #0A0C20;
+  background: #0A0C20;
 }
-a{
-    text-decoration: none;
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 360px) {
-    .navigation{
-        width: 100vw;
-        height: 70px;
-        background: yellow;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo-img{
-        height: 50px;
-    }
-    .logo-header{
-        font-size: 20px;
-        font-weight: 800;
-        text-align: end;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: #000000;
-    }
-    .nav-section{
-        margin-left: 10px;
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow: visible;
-    }
-    .nav-section li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        background-color: #0015f8;
-        height: 30px;
-        margin: 7px;
-        border-radius: 8px;
-    }
-    .nav-section li:hover{
-        background-color: #169c64;
-    }
-    .nav-section-a{
-        text-decoration: none;
-        color: #000000;
-        margin: 10px;
-        font-size: 12px;
-        font-weight: 550;
-        text-align: center;
-    }
-}
+  .navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    background: yellow;
+  }
 
+  .logo {
+    padding: 10px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0015f8;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  .logo-header {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: #000000;
+  }
+
+  .nav-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    margin-left: 10px;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: visible;
+    transition: all 0.7s;
+    -webkit-clip-path: circle(30px at 200px 35px);
+            clip-path: circle(30px at 200px 35px);
+  }
+
+  .nav-section:hover {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+
+  .nav-section-bar {
+    margin-bottom: 10px;
+  }
+
+  .nav-section-bar-header {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  #nav-section-bar-menu {
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #169c64;
+    height: 35px;
+    position: relative;
+    left: 80px;
+    top: -30px;
+  }
+
+  .nav-section li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #0015f8;
+    height: 30px;
+    margin: 7px;
+    border-radius: 8px;
+  }
+
+  .nav-section li:hover {
+    background-color: #169c64;
+  }
+
+  .nav-section-a {
+    text-decoration: none;
+    color: #000000;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 550;
+    text-align: center;
+  }
+}
 @media (min-width: 576px) {
-    h2 {
-        background: #fcfcff;
-    }
+  h2 {
+    background: #fcfcff;
+  }
 }
-
-@media (min-width: 768px) { 
-    h2 {
-        background: #000000;
-    }
+@media (min-width: 768px) {
+  h2 {
+    background: #000000;
+  }
 }
-
-@media (min-width: 990px) { 
-    h2 {
-        background: #0015f8;
-    }
+@media (min-width: 990px) {
+  h2 {
+    background: #0015f8;
+  }
 }
-
-@media (min-width: 1200px) { 
-    h2 {
-        background: #169c64;
-    }
-}
+@media (min-width: 1200px) {
+  h2 {
+    background: #169c64;
+  }
+}/*# sourceMappingURL=portfoliostyle.css.map */
