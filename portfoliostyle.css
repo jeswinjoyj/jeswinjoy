@@ -24,7 +24,7 @@ a {
 
   .logo {
     padding: 10px;
-    width: 45%;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,10 +60,16 @@ a {
     -webkit-clip-path: circle(30px at 200px 35px);
             clip-path: circle(30px at 200px 35px);
   }
+  .nav-section #nav-section-bar-menu {
+    opacity: 1;
+  }
 
   .nav-section:hover {
     -webkit-clip-path: circle(75%);
             clip-path: circle(75%);
+  }
+  .nav-section:hover #nav-section-bar-menu {
+    opacity: 0;
   }
 
   .nav-section-bar {
