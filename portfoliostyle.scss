@@ -52,8 +52,7 @@ a{
         align-items: center;
         overflow: visible;
         transition: all 0.7s ;
-        clip-path: circle(30px at 200px 32px);
-        
+        clip-path: circle(30px at 200px 35px);
         #nav-section-bar-menu{
             opacity: 1;
             cursor: pointer;
@@ -90,7 +89,7 @@ a{
         list-style: none;
         background-color: #0015f8;
         width: 80%;
-        // height: 35px;
+        height: 35px;
         margin: 7px;
         border-radius: 8px;
     }
@@ -101,10 +100,48 @@ a{
     .nav-section-a{
         text-decoration: none;
         color: #000000;
+        // background-color: aqua;
+        width: 100%;
+        padding-top: 5px;
+        height: 35px;
         margin: 10px;
         font-size: 18px;
         font-weight: 550;
         text-align: center;
+    }
+    .profile{
+        margin-top: 30px;
+    }
+    .profile-img-container{
+        margin: 0 auto;
+        width: 280px;
+        height: 320px;
+        background-color: #169c64;
+        clip-path: polygon(20% 0, 82% 5%, 95% 89%, 4% 95%);
+        text-align: center;
+    }
+    .profile-img{
+        margin-top: -20px;
+        height: 380px;
+    }
+    .profile-title{
+        margin: 0 auto;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .profile-title-name{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .profile-title-info{
+        text-align: center;
+        text-indent: 20px;
+        font-size: 15px;
+        line-height: 20px;
     }
 }
 
